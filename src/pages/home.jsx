@@ -1,14 +1,20 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
-const Lymi = () => {
+const xtxt = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers once
+    threshold: 0.1, // 10% of the component must be visible
+  });
+
   return (
     <>
       <header>
         <img style={{ height: "50px" }} src="xtxt logo.png" alt="" />
-        Lymi
+        xtxt
       </header>
       <div className="heropage">
-        <div className="subtext">Meet Lymi Agent Today</div>
+        <div className="subtext">Meet xtxt Agent Today</div>
         <div className="maintext">
           An AI-powered assistant designed to simplify, automate, and optimize
           tasks on Solana effortlessly
@@ -18,8 +24,16 @@ const Lymi = () => {
           automated strategies with precision. Experience a new level of
           efficiency in the Solana ecosystem today.
         </div>
-        <button>Lymi Beta</button>
-        <img className="heropage__img" src="/Lyme PNG NEW.png" alt="" />
+        <button>xtxt Beta</button>
+        <div className="page1-imgs">
+          <img className="heropage__img" src="/Lyme PNG NEW.png" alt="" />
+          <div ref={ref} className={`box div1 ${inView ? "animate" : ""}`}>
+            <img src="Artboard 1 copy.png" alt="" />
+          </div>
+          <div ref={ref} className={`box div2 ${inView ? "animate" : ""}`}>
+            <img src="Artboard 1 copy 2.png" alt="" />
+          </div>
+        </div>
       </div>
 
       <div className="heropage page2">
@@ -89,7 +103,7 @@ const Lymi = () => {
         </div>
 
         <div className="finetext">
-          Lymi analyzes blockchain data in real-time, helping users make
+          xtxt analyzes blockchain data in real-time, helping users make
           informed decisions, manage assets, and track market trends within the
           Solana ecosystem.
         </div>
@@ -99,7 +113,7 @@ const Lymi = () => {
         <img src="/Artboard 1 copy 6.png" alt="" />
 
         <div className=" subtext-2 subtext">
-          Join the Lymi Beta Program and be among the first to experience
+          Join the xtxt Beta Program and be among the first to experience
           AI-driven blockchain insights, asset management, and Web3 automation
           by signing up for our exclusive beta whitelist.
         </div>
@@ -116,4 +130,4 @@ const Lymi = () => {
   );
 };
 
-export default Lymi;
+export default xtxt;
