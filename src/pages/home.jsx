@@ -4,7 +4,7 @@ const Lymi = () => {
   return (
     <>
       <header>
-        <img src="6c4dd3_12a5d7ea3c474a3eb4c9ae2138cbbd24~mv2.avif" alt="" />
+        <img style={{ height: "50px" }} src="xtxt logo.png" alt="" />
         Lymi
       </header>
       <div className="heropage">

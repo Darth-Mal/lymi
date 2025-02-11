@@ -15,22 +15,23 @@ header {
   right: 0;
   top: 0;
   z-index: 99;
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
   display: flex;
+  align-items: center;
 }
 
 .heropage {
   padding-top: 140px;
   background: linear-gradient(
     45deg,
-    rgb(250, 204, 241) 0%,
-    rgb(250, 204, 241) 30%,
+    rgb(255, 31, 128) 0%,
+    rgb(169, 0, 93) 30%,
     rgba(254, 219, 245, 0.5) 50%,
     rgb(255, 255, 255) 60%,
 
-    rgba(53, 172, 226, 0.5) 70%,
-    rgb(15, 157, 221) 100%
+    rgba(253, 238, 33, 0.5) 70%,
+    rgb(253, 238, 33) 100%
   );
   background-size: 200% 200%;
   animation: wave 10s ease-in-out infinite;
@@ -86,7 +87,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(108, 214, 74);
+  background-color: rgb(255, 31, 128);
   color: black;
 }
 
@@ -133,7 +134,7 @@ button:hover {
   left: 2%;
   width: 500px;
   height: 500px;
-  background: rgba(250, 204, 241, 0.9);
+  background: rgba(255, 31, 128, 0.5);
   filter: blur(80px);
   z-index: -1;
   border-radius: 50%;
@@ -146,7 +147,7 @@ button:hover {
   right: -10%;
   width: 500px;
   height: 500px;
-  background: rgba(108, 214, 74, 0.5);
+  background: rgba(253, 238, 33, 0.5);
   filter: blur(80px);
   z-index: -1;
   border-radius: 50%;
