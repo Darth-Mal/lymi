@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-const xtxt = () => {
+const Xtxt = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Animation triggers once
     threshold: 0.1, // 10% of the component must be visible
@@ -10,11 +10,11 @@ const xtxt = () => {
   return (
     <>
       <header>
-        <img style={{ height: "50px" }} src="xtxt logo.png" alt="" />
-        xtxt
+        <img style={{ height: "50px" }} src="Xtxt logo.png" alt="" />
+        Xtxt
       </header>
       <div className="heropage">
-        <div className="subtext">Meet xtxt Agent Today</div>
+        <div className="subtext">Meet Xtxt Agent Today</div>
         <div className="maintext">
           An AI-powered assistant designed to simplify, automate, and optimize
           tasks on Solana effortlessly
@@ -24,7 +24,7 @@ const xtxt = () => {
           automated strategies with precision. Experience a new level of
           efficiency in the Solana ecosystem today.
         </div>
-        <button>xtxt Beta</button>
+        <button>Xtxt Beta</button>
         <div className="page1-imgs">
           <img className="heropage__img" src="/Lyme PNG NEW.png" alt="" />
           <div ref={ref} className={`box div1 ${inView ? "animate" : ""}`}>
@@ -103,7 +103,7 @@ const xtxt = () => {
         </div>
 
         <div className="finetext">
-          xtxt analyzes blockchain data in real-time, helping users make
+          Xtxt analyzes blockchain data in real-time, helping users make
           informed decisions, manage assets, and track market trends within the
           Solana ecosystem.
         </div>
@@ -113,7 +113,7 @@ const xtxt = () => {
         <img src="/Artboard 1 copy 6.png" alt="" />
 
         <div className=" subtext-2 subtext">
-          Join the xtxt Beta Program and be among the first to experience
+          Join the Xtxt Beta Program and be among the first to experience
           AI-driven blockchain insights, asset management, and Web3 automation
           by signing up for our exclusive beta whitelist.
         </div>
@@ -130,4 +130,4 @@ const xtxt = () => {
   );
 };
 
-export default xtxt;
+export default Xtxt;
