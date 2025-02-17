@@ -10,7 +10,7 @@ const Xtxt = () => {
   return (
     <>
       <header>
-        <img style={{ height: "50px" }} src="Xtxt logo.png" alt="" />
+        <img style={{ height: "50px" }} src="xtxt logo.png" alt="" />
         Xtxt
       </header>
       <div className="heropage">
